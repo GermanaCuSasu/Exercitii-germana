@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Übung 1 – Verb „sein” konjugieren</title>
+  <link rel="stylesheet" href="style.css">
+  <h1 class="main-title">Hausaufgabe "sein" und "haben"</h1>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: auto; padding: 20px; }
+    input { width: 100px; padding: 5px; margin: 5px; }
+    .correct { background-color: #c8e6c9; }
+    .wrong { background-color: #ffcdd2; }
+    button { margin-top: 20px; padding: 10px 15px; }
+    h2 { text-decoration: underline; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h2>Übung 1 – Konjugieren Sie das Verb „sein”</h2>
+  <form id="exercise1">
+    <ol type="a">
+      <li>Ich <b>bin</b> Schauspieler.</li>
+      <li>Du <input type="text" id="e7a"> Schauspieler.</li>
+      <li>Sie <input type="text" id="e7b"> Schauspielerin.</li>
+      <li>Er <input type="text" id="e7c"> Schauspieler.</li>
+      <li>Wir <input type="text" id="e7d"> Schauspieler.</li>
+      <li>Ihr <input type="text" id="e7e"> Schauspieler.</li>
+      <li>Sie <input type="text" id="e7f"> Schauspieler.</li>
+
+      <li class="gap-top">Ich <b>bin</b> Sänger.</li>
+      <li>Du <input type="text" id="e7g"> Sänger.</li>
+      <li>Er <input type="text" id="e7h"> Sänger.</li>
+      <li>Sie <input type="text" id="e7i"> Sängerin.</li>
+      <li>Wir <input type="text" id="e7j"> Sänger.</li>
+      <li>Ihr <input type="text" id="e7k"> Sänger.</li>
+      <li>Sie <input type="text" id="e7l"> Sänger.</li>
+    </ol>
+    <button type="button" onclick="checkExercise1()">Überprüfen Übung 1</button>
+  </form>
+
+<h2>Übung 2 – Ergänzen Sie die Lücken</h2>
+<form id="exercise2">
+  <ol>
+    <li>Hallo, ich <input type="text" id="e2q1"> Helmut. Wer <input type="text" id="e2q2"> du?</li>
+    <li>Ich <input type="text" id="e2q3"> Heike.</li>
+    <li>Ich <input type="text" id="e2q4"> Frau Schuster. Wer <input type="text" id="e2q5"> Sie?</li>
+    <li>Ich <input type="text" id="e2q6"> Herr Moor.</li>
+    <li>Das <input type="text" id="e2q7"> Thomas und ich <input type="text" id="e2q8"> Sebastian. Und wer <input type="text" id="e2q9"> ihr?</li>
+    <li>Wir <input type="text" id="e2q10"> Helga und Judith.</li>
+    <li>Ich <input type="text" id="e2q11"> Student. <input type="text" id="e2q12"> du auch Studentin?</li>
+    <li>Nein, ich <input type="text" id="e2q13"> Köchin.</li>
+    <li><input type="text" id="e2q14"> Holger da?</li>
+    <li>Ja, <input type="text" id="e2q15"> ist da.</li>
+    <li>Sind <input type="text" id="e2q16"> Herr Schmidt?</li>
+    <li>Nein, ich <input type="text" id="e2q17"> Herr Schmied.</li>
+    <li>Bist <input type="text" id="e2q18"> Elektriker?</li>
+    <li>Nein, <input type="text" id="e2q19"> bin Techniker.</li>
+    <li>Ist Martina <input type="text" id="e2q20"> ?</li>
+    <li>Ja, <input type="text" id="e2q21"> ist da.</li>
+    <li>Ist <input type="text" id="e2q22"> Peter?</li>
+    <li>Ja, <input type="text" id="e2q23"> ist Peter.</li>
+    <li><input type="text" id="e2q24"> das der Lehrer?</li>
+    <li>Nein, das <input type="text" id="e2q25"> der Hausmeister.</li>
+  </ol>
+  <button type="button" onclick="checkExercise2()">Überprüfen Übung 2</button>
+</form>
+
+<h2>Übung 3 – Ergänzen Sie die fehlenden Wörter</h2>
+<form id="exercise3">
+  <ol>
+    <li>Wo ist Maria? Ist <input type="text" id="e3q1"> in Paris?</li>
+    <li>Nein, <input type="text" id="e3q2"> ist nicht in Paris. <input type="text" id="e3q3"> ist in Madrid.</li>
+    <li>Wo ist der Arzt? Ist <input type="text" id="e3q4"> in Kolumbien?</li>
+    <li>Nein, <input type="text" id="e3q5"> ist nicht in Kolumbien. <input type="text" id="e3q6"> ist in Venezuela.</li>
+    <li>Wo <input type="text" id="e3q7"> der Wagen? Ist <input type="text" id="e3q8"> in Köln?</li>
+    <li>Nein, <input type="text" id="e3q9"> ist nicht in Köln. Er <input type="text" id="e3q10"> in Leverkusen.</li>
+    <li>Wo <input type="text" id="e3q11"> Peter und Petra? <input type="text" id="e3q12"> sie in Frankreich?</li>
+    <li>Nein, sie sind <input type="text" id="e3q13"> in Frankreich. Sie <input type="text" id="e3q14"> in Spanien.</li>
+    <li>Wo ist Madrid? Ist <input type="text" id="e3q15"> in Italien?</li>
+    <li>Nein, <input type="text" id="e3q16"> ist nicht in Italien. <input type="text" id="e3q17"> ist in Spanien.</li>
+    <li>Wo ist <input type="text" id="e3q18"> Stadt? Ist <input type="text" id="e3q19"> in Deutschland?</li>
+    <li>Nein, <input type="text" id="e3q20"> ist nicht in Deutschland. <input type="text" id="e3q21"> ist in Österreich.</li>
+    <li>Wo ist <input type="text" id="e3q22"> Kind? Ist <input type="text" id="e3q23"> hier?</li>
+    <li>Nein, <input type="text" id="e3q24"> ist nicht hier. <input type="text" id="e3q25"> ist dort.</li>
+    <li>Wo ist <input type="text" id="e3q26"> Vater? Ist <input type="text" id="e3q27"> da?</li>
+    <li>Nein, <input type="text" id="e3q28"> ist nicht da. <input type="text" id="e3q29"> ist in Brasilien.</li>
+    <li>Wo ist <input type="text" id="e3q30"> Mutter? Ist <input type="text" id="e3q31"> hier?</li>
+    <li>Nein, <input type="text" id="e3q32"> ist nicht hier. <input type="text" id="e3q33"> ist dort.</li>
+    <li>Wo <input type="text" id="e3q34"> ihr jetzt? <input type="text" id="e3q35"> ihr in Berlin?</li>
+    <li>Nein, wir <input type="text" id="e3q36"> noch in Hannover.</li>
+  </ol>
+  <button type="button" onclick="checkExercise3()">Überprüfen Übung 3</button>
+</form>
+
+  <script>
+    const exercise1Answers = {
+      e7a: "bist",
+      e7b: "sind",
+      e7c: "ist",
+      e7d: "sind",
+      e7e: "seid",
+      e7f: "sind",
+      e7g: "bist",
+      e7h: "ist",
+      e7i: "ist",
+      e7j: "sind",
+      e7k: "seid",
+      e7l: "sind"
+    };
+
+    function checkAnswers(answerSet) {
+      for (let id in answerSet) {
+        const input = document.getElementById(id);
+        const userAnswer = input.value.trim().toLowerCase();
+        input.className = (userAnswer === answerSet[id].toLowerCase()) ? "correct" : "wrong";
+      }
+    }
+
+    function checkExercise1() {
+      checkAnswers(exercise1Answers);
+    }
+  </script>
+  <script>
+const exercise2Answers = {
+  e2q1: "bin",
+  e2q2: "bist",
+  e2q3: "bin",
+  e2q4: "bin",
+  e2q5: "sind",
+  e2q6: "bin",
+  e2q7: "ist",
+  e2q8: "bin",
+  e2q9: "seid",
+  e2q10: "sind",
+  e2q11: "bin",
+  e2q12: "bist",
+  e2q13: "bin",
+  e2q14: "ist",
+  e2q15: "er",
+  e2q16: "Sie",
+  e2q17: "bin",
+  e2q18: "du",
+  e2q19: "ich",
+  e2q20: "da",
+  e2q21: "sie",
+  e2q22: "das",
+  e2q23: "das",
+  e2q24: "Ist",
+  e2q25: "ist"
+};
+
+function checkExercise2() {
+  checkAnswers(exercise2Answers);
+}
+</script>
+
+<script>
+const exercise3Answers = {
+  e3q1: "sie",
+  e3q2: "sie",
+  e3q3: "sie",
+  e3q4: "er",
+  e3q5: "er",
+  e3q6: "er",
+  e3q7: "ist",
+  e3q8: "er",
+  e3q9: "er",
+  e3q10: "ist",
+  e3q11: "sind",
+  e3q12: "Sind",
+  e3q13: "nicht",
+  e3q14: "sind",
+  e3q15: "es",
+  e3q16: "es",
+  e3q17: "es",
+  e3q18: "diese",
+  e3q19: "sie",
+  e3q20: "sie",
+  e3q21: "sie",
+  e3q22: "das",
+  e3q23: "es",
+  e3q24: "es",
+  e3q25: "es",
+  e3q26: "der",
+  e3q27: "er",
+  e3q28: "er",
+  e3q29: "er",
+  e3q30: "die",
+  e3q31: "sie",
+  e3q32: "sie",
+  e3q33: "sie",
+  e3q34: "seid",
+  e3q35: "Seid",
+  e3q36: "sind"
+};
+
+function checkExercise3() {
+  checkAnswers(exercise3Answers);
+}
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
